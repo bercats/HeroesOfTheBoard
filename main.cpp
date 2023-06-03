@@ -6,6 +6,8 @@
 */
 #include <iostream>
 #include "Board.h"
+#include "Melee.h"
+#include "Ranged.h"
 #include <windows.h>
 
 using namespace std;
@@ -25,11 +27,19 @@ A legendary board game where you can play with your friends and have fun!
 
 )" << std::endl;
 
-    Board board;
-    board.setCell(0, 0, 'E');
-    board.printBoard();
+    Board *board1 = new Board(1, 100);
+
+    Piece *melee1 = new Melee(9, 10, "M");
+
+    Piece *ranged1 = new Ranged(10, 10, "R");
+
+    board1->setCell(0,0,melee1);
+    board1->setCell(0,1,ranged1);
+    board1->printBoard();
 
     return 0;
 }
+
+
 
 
