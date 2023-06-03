@@ -39,7 +39,8 @@ void Board::printBoard() {
                 string character = board[i][j]->getCharacter();
                 string health = to_string(board[i][j]->getHealth());
                 string pieceRepresentation = character + "[" + health + "]";
-                cout << setw(CELL_WIDTH) << right << pieceRepresentation << " ║ ";            }
+                cout << setw(CELL_WIDTH) << right << pieceRepresentation << " ║ ";
+            }
         }
         cout << endl;
         if (i != BOARD_ROWS - 1) {
@@ -49,6 +50,30 @@ void Board::printBoard() {
     cout << "╚═══════╩═══════╩═══════╝" << endl;
     cout<<"Player No: "<<playerNo<<endl;
     cout<<"Health: "<<health<<endl;
+}
+
+void Board::printReverseBoard() {
+    cout << "╔═══════╦═══════╦═══════╗" << endl;
+    for (int i = 0; i < BOARD_ROWS; i++) {
+        cout << "║ ";
+        for (int j = BOARD_COLUMNS - 1; j >= 0; j--) {
+            if (board[i][j] == nullptr) {
+                cout << setw(CELL_WIDTH) << right << " " << " ║ ";
+            } else {
+                string character = board[i][j]->getCharacter();
+                string health = to_string(board[i][j]->getHealth());
+                string pieceRepresentation = character + "[" + health + "]";
+                cout << setw(CELL_WIDTH) << right << pieceRepresentation << " ║ ";
+            }
+        }
+        cout << endl;
+        if (i != BOARD_ROWS - 1) {
+            cout << "╠═══════╬═══════╬═══════╣" << endl;
+        }
+    }
+    cout << "╚═══════╩═══════╩═══════╝" << endl;
+    cout << "Player No: " << playerNo << endl;
+    cout << "Health: " << health << endl;
 }
 
 bool Board::isCellEmpty(int row, int column) {

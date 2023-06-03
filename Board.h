@@ -22,6 +22,7 @@ public:
     Board(int playerNo, int health);
     ~Board();
     void printBoard();
+    void printReverseBoard();
     bool isCellEmpty(int row, int column);
     void setCell(int row, int column, Piece* piece);
     int getHealth() const;
