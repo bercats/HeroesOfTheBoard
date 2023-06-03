@@ -25,6 +25,13 @@ Board::Board(int playerNo, int health) : playerNo(playerNo), health(health) {
     }
 }
 
+Board::~Board() {
+    for (int i = 0; i < BOARD_ROWS; ++i) {
+        for (int j = 0; j < BOARD_COLUMNS; ++j) {
+            delete board[i][j];
+        }
+    }
+}
 
 void Board::printBoard() {
     cout << "╔═══════╦═══════╦═══════╗" << endl;
