@@ -12,7 +12,6 @@ Board::Board() : playerNo(0), health(100) {
     for (int i = 0; i < BOARD_ROWS; ++i) {
         for (int j = 0; j < BOARD_COLUMNS; ++j) {
             board[i][j] = nullptr;
-
         }
     }
 }
@@ -34,6 +33,7 @@ Board::~Board() {
 }
 
 void Board::printBoard() {
+    cout << "    1       2        3  "<< endl;
     cout << "╔═══════╦═══════╦═══════╗" << endl;
     for (int i = 0; i < BOARD_ROWS; i++) {
         cout << "║ ";
@@ -60,6 +60,7 @@ void Board::printBoard() {
 }
 
 void Board::printReverseBoard() {
+    cout << "    3       2        1  "<< endl;
     cout << "╔═══════╦═══════╦═══════╗" << endl;
     for (int i = 0; i < BOARD_ROWS; i++) {
         cout << "║ ";
@@ -89,7 +90,6 @@ bool Board::isCellEmpty(int row, int column) {
         cout << "Invalid coordinates!" << endl;
         return false;
     }
-
     //check if the cell is empty
     if (board[row][column] != nullptr) {
         cout << "Cell is not empty!" << endl;
@@ -105,13 +105,11 @@ void Board::setCell(int row, int column, Piece* piece) {
         cout << "Invalid coordinates!" << endl;
         return;
     }
-
     //check if the cell is empty
     if (!isCellEmpty(row, column)) {
         cout << "Cell is not empty!" << endl;
         return;
     }
-
     //set the cell
     board[row][column] = piece;
 }

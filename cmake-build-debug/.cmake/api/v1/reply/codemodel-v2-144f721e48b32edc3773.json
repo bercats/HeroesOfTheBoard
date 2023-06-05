@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HeroesOfTheBoard",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HeroesOfTheBoard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HeroesOfTheBoard-Debug-c93c6996123b9e9647f8.json",
+					"name" : "HeroesOfTheBoard",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/berke/Desktop/Berke/METU/CNG/4/CNG 242/HeroesOfTheBoard/cmake-build-debug",
+		"source" : "C:/Users/berke/Desktop/Berke/METU/CNG/4/CNG 242/HeroesOfTheBoard"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -32,7 +32,7 @@ public:
     virtual void attack() = 0;
 
     virtual void print() = 0;
-};
+};;
 
 
 #endif //HEROESOFTHEBOARD_PIECE_H
