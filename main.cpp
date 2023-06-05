@@ -8,6 +8,9 @@
 #include "Board.h"
 #include "Melee.h"
 #include "Ranged.h"
+#include "Mage.h"
+#include "Elf.h"
+#include "Bowman.h"
 #include <windows.h>
 
 using namespace std;
@@ -28,17 +31,14 @@ A legendary board game where you can play with your friends and have fun!
 )" << std::endl;
 
     Board *board1 = new Board(1, 100);
-    Board *board2 = new Board(2, 100);
 
-    Piece *melee1 = new Melee(9, 10, "M");
-    Piece *ranged1 = new Ranged(10, 10, "R");
-    Piece *melee2 = new Melee(50, 10, "M");
+    Piece *mage1 = new Mage();
+    Piece *bowman1 = new Bowman();
+    Piece *elf1 = new Elf();
 
-    board1->setCell(0,0,melee1);
-    board1->setCell(0,1,ranged1);
-    board1->setCell(0 , 2 , melee2);
-
-
+    board1->setCell(0, 0, mage1);
+    board1->setCell(0, 1, bowman1);
+    board1->setCell(0, 2, elf1);
 
 
     board1->printBoard();

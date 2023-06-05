@@ -9,4 +9,4 @@ add_executable(HeroesOfTheBoard
         Board.cpp
         Board.h
         LICENSE
-        README.md main.cpp Piece.h Piece.cpp Melee.h Melee.cpp Ranged.h Ranged.cpp)
+        README.md main.cpp Piece.h Piece.cpp Melee.h Melee.cpp Ranged.h Ranged.cpp Bowman.h Bowman.cpp Elf.h Elf.cpp Mage.h Mage.cpp)
