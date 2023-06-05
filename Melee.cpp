@@ -7,8 +7,8 @@
 
 Melee::Melee(int health, int damage, char *character) : Piece(health, damage, character) {}
 
-void Melee::attack() {
-    std::cout << "Melee attack" << std::endl;
+void Melee::attack(Piece &target) {
+    target.setHealth(target.getHealth() - damage);
 }
 
 void Melee::print() {

@@ -7,8 +7,8 @@
 
 Ranged::Ranged(int health, int damage, char *character) : Piece(health, damage, character) {}
 
-void Ranged::attack() {
-    std::cout << "Ranged attack" << std::endl;
+void Ranged::attack(Piece &target) {
+    target.setHealth(target.getHealth() - damage);
 }
 
 void Ranged::print() {

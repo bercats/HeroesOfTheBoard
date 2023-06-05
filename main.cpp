@@ -11,6 +11,11 @@
 #include "Mage.h"
 #include "Elf.h"
 #include "Bowman.h"
+#include "Ranger.h"
+#include "Knight.h"
+#include "Swordsman.h"
+#include "Spearman.h"
+#include "Game.h"
 #include <windows.h>
 
 using namespace std;
@@ -30,20 +35,13 @@ A legendary board game where you can play with your friends and have fun!
 
 )" << std::endl;
 
-    Board *board1 = new Board(1, 100);
-
-    Piece *mage1 = new Mage();
-    Piece *bowman1 = new Bowman();
-    Piece *elf1 = new Elf();
-
-    board1->setCell(0, 0, mage1);
-    board1->setCell(0, 1, bowman1);
-    board1->setCell(0, 2, elf1);
-
-
-    board1->printBoard();
-    board1->printReverseBoard();
-
+    Game *game = new Game();
+    int choice = 1;
+    while(choice == 1){
+        game->play();
+        cout<<"Do you want to play again? (1 for yes, 0 for no)"<<endl;
+        cin>>choice;
+    }
 
 
     return 0;

@@ -5,3 +5,4 @@
 #include "Bowman.h"
 
 Bowman::Bowman() : Ranged(12, 3, "B") {}
+

@@ -10,7 +10,7 @@ class Melee : public Piece{
 public:
     Melee(int health, int damage, char* character);
 
-    void attack() override;
+    void attack(Piece &target) override;
 
     void print() override;
 };

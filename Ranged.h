@@ -10,7 +10,7 @@ class Ranged : public Piece{
 public:
     Ranged(int health, int damage, char* character);
 
-    void attack() override;
+    void attack(Piece &target) override;
 
     void print() override;
 

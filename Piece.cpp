@@ -30,6 +30,10 @@ void Piece::setCharacter(char *character) {
     Piece::character = character;
 }
 
+void Piece::attack(Piece &target) {
+    target.setHealth(target.getHealth() - damage);
+}
+
 Piece::~Piece() {
     delete character;
 }

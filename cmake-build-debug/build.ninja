@@ -133,6 +133,13 @@ build CMakeFiles/HeroesOfTheBoard.dir/Knight.cpp.obj: CXX_COMPILER__HeroesOfTheB
   OBJECT_DIR = CMakeFiles\HeroesOfTheBoard.dir
   OBJECT_FILE_DIR = CMakeFiles\HeroesOfTheBoard.dir
 
+build CMakeFiles/HeroesOfTheBoard.dir/Game.cpp.obj: CXX_COMPILER__HeroesOfTheBoard_Debug C$:/Users/berke/Desktop/Berke/METU/CNG/4/CNG$ 242/HeroesOfTheBoard/Game.cpp || cmake_object_order_depends_target_HeroesOfTheBoard
+  DEP_FILE = CMakeFiles\HeroesOfTheBoard.dir\Game.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/berke/Desktop/Berke/METU/CNG/4/CNG 242/HeroesOfTheBoard/."
+  OBJECT_DIR = CMakeFiles\HeroesOfTheBoard.dir
+  OBJECT_FILE_DIR = CMakeFiles\HeroesOfTheBoard.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HeroesOfTheBoard
@@ -141,7 +148,7 @@ build CMakeFiles/HeroesOfTheBoard.dir/Knight.cpp.obj: CXX_COMPILER__HeroesOfTheB
 #############################################
 # Link the executable HeroesOfTheBoard.exe
 
-build HeroesOfTheBoard.exe: CXX_EXECUTABLE_LINKER__HeroesOfTheBoard_Debug CMakeFiles/HeroesOfTheBoard.dir/Board.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/main.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Piece.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Melee.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Ranged.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Bowman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Elf.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Mage.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Swordsman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Spearman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Ranger.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Knight.cpp.obj
+build HeroesOfTheBoard.exe: CXX_EXECUTABLE_LINKER__HeroesOfTheBoard_Debug CMakeFiles/HeroesOfTheBoard.dir/Board.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/main.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Piece.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Melee.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Ranged.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Bowman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Elf.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Mage.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Swordsman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Spearman.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Ranger.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Knight.cpp.obj CMakeFiles/HeroesOfTheBoard.dir/Game.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HeroesOfTheBoard.dir

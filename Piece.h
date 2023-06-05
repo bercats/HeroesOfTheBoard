@@ -29,7 +29,7 @@ public:
 
     void setCharacter(char *character);
 
-    virtual void attack() = 0;
+    virtual void attack(Piece &target);
 
     virtual void print() = 0;
 };;
